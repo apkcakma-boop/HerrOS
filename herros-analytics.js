@@ -22,7 +22,7 @@
 //  ✅ Əvvəlki günün xülaməsi (sabah göndərilir)
 // ══════════════════════════════════════════════════════════════════
 
-const MEASUREMENT_ID = 'G-XXXXXXXXXX'; // ← ÖZ GA4 ID'NİZİ YAZIN
+const MEASUREMENT_ID = 'G-LK16BSX2JJ'; // ← ÖZ GA4 ID'NİZİ YAZIN
 
 // ── GA4 Script yüklə ────────────────────────────────────────────
 (function () {
