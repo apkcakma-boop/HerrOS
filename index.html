@@ -12585,7 +12585,16 @@ function _shopRefresh(){
   const blob = new Blob([JSON.stringify(manifest)], {type:'application/manifest+json'});
   document.getElementById('pwaManifest').href = URL.createObjectURL(blob);
 })();
-
+<!-- ══ SERVICE WORKER QEYDIYYATI ══ -->
+<script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('./sw.js')
+      .then(r => console.log('SW qeydiyyatı OK:', r.scope))
+      .catch(e => console.warn('SW xətası:', e));
+  });
+}
+</script>
 // ══ GLOBAL SEARCH ══════════════════════════
 let _gsFilter='all';
 
